@@ -2,16 +2,24 @@
 
 > This project analyzes World Happiness Report data (2005–2024) to explore the main social, economic, and health factors that influence happiness worldwide, using exploratory data analysis and regression modeling.
 
-## 📊 Projektübersicht
+## 📊 Project Overview
 
-**Problemstellung:** 
-<!-- Beschreibe das Problem, das du lösen möchtest -->
+**Problem Statement:** 
 
-**Ziel:** 
-<!-- Was ist das Hauptziel deines Projekts? -->
+Happiness is increasingly recognized as a key indicator of societal progress, yet the factors that drive it remain complex and vary across countries and over time. Without a clear understanding of these determinants, it is difficult to explain differences in well-being levels or identify long-term global trends. 
 
-**Methoden:** 
-<!-- Welche Techniken/Algorithmen verwendest du? -->
+This project addresses this gap by analyzing the most recent World Happiness Report data (2024) to evaluate the relative importance of social, economic, and health-related drivers, while also exploring how happiness scores have evolved worldwide from 2005 to 2024.
+
+**Objective:** 
+
+The project aims to conduct a detailed analysis of the year 2024 to evaluate the key determinants of happiness and their relative importance. In addition, historical data from 2005–2024 will be used for time series analysis to observe trends in the development of the Happiness Score across countries and regions.
+
+**Methods:** 
+
+- **Exploratory data analysis (EDA)** for investigating distributions, correlations, and cross-country differences
+- **Visualizations** (e.g. time series plots, heat maps, regression plots) for representing relationships and trends across years and regions
+- **Regression modeling** (linear regression with VIF checks) for evaluating the relative importance of happiness determinants in 2024
+- **Comparative analysis** (2024 vs. 2005–2024) for identifying key drivers and long-term developments in happiness scores
 
 ## 🎯 Key Findings
 
@@ -20,7 +28,7 @@
 - 🔍 **Erkenntnis 2:** Kurze Beschreibung  
 - 💡 **Erkenntnis 3:** Kurze Beschreibung
 
-## 📁 Repository Struktur
+## 📁 Repository Structure
 
 ```
 ├── data/
@@ -34,48 +42,76 @@
 └── docs/                       # Zusätzliche Dokumentation
 ```
 
-## 🔧 Verwendete Technologien
+## 🔧 Technologies Used
 
-**Programmiersprachen:**
-<!-- z.B. Python, R, SQL -->
+**Programming Languages:**
+
+- Python (3.12)
 
 **Libraries & Frameworks:**
-<!-- z.B. pandas, scikit-learn, matplotlib, etc. -->
+
+- pandas, numpy (data processing)
+- matplotlib, seaborn (visualization)
+- scikit-learn (modeling, regression analysis)
 
 **Tools:**
 <!-- z.B. Jupyter, Git, Docker, etc. -->
+- Jupyter Notebooks (exploration & reporting)
+- Git/GitHub (version control & portfolio hosting)
+- UV Packetmanager (dependency management)
 
-## 📊 Daten
+## 📊 Data
 
-**Datenquelle:** 
+**Source:** 
 <!-- Woher kommen deine Daten? -->
+- World Happiness Report (2005–2024), available at: https://worldhappiness.report/ed/2024/
+- Kaggle dataset “World Happiness Report- 2024”, available at: https://www.kaggle.com/datasets/jainaru/world-happiness-report-2024-yearly-updated/data
 
-**Datensatz-Größe:** 
+**Dataset Size:** 
 <!-- Anzahl Zeilen/Spalten, Dateigröße -->
+- Historical dataset (2005–2023): 2363 rows × 11 columns
+- 2024 dataset: 143 rows × 12 columns
 
-**Wichtige Features:** 
+**Key Features:** 
 <!-- Beschreibung der wichtigsten Variablen -->
+- **Ladder score** (dependent variable, national happiness level based on the Cantril ladder (0–10))
+- **Log GDP per capita** (economic prosperity adjusted for purchasing power)
+- **Social support** (availability of friends or relatives in times of need)
+- **Healthy life expectancy** (expected years of healthy living)
+- **Freedom to make life choices** (perceived autonomy in everyday decisions)
+- **Perceptions of corruption** (public trust in government and institutions)
+- **Generosity** (propensity to donate (income-adjusted residual))
 
-## 🤖 Methodik
+
+## 🤖 Methodology
 
 ### Data Preprocessing
 <!-- Kurze Beschreibung deiner Datenbereinigung -->
+- Handling missing values and inconsistent formats
+- Harmonizing differences between 2024 and historical datasets (notably “Healthy life expectancy”)
+- Standardizing feature scales for regression analysis
 
 ### Modeling Approach  
 <!-- Welche Modelle hast du getestet? -->
+- Linear regression to estimate the contribution of each factor
+- Variance Inflation Factor (VIF) to check multicollinearity
+- Comparative analysis of 2024 vs. historical trends
 
 ### Evaluation
 <!-- Wie hast du die Ergebnisse bewertet? -->
+- Coefficient interpretation
+- Goodness-of-fit metrics (R², adjusted R²)
+- Cross-country comparison of predictions vs. actual scores
 
-## 📈 Ergebnisse
+## 📈 Results
 
 **Model Performance:**
 <!-- Deine besten Metriken (Accuracy, RMSE, etc.) -->
 
-**Wichtigste Visualisierungen:**
+**Key Visualizations:**
 <!-- Verweis auf Key-Plots in deinen Notebooks -->
 
-## 🚀 Reproduzierbarkeit
+## 🚀 Reproducibility
 
 ### Setup
 ```bash
@@ -87,7 +123,7 @@ cd [REPO-NAME]
 uv sync
 ```
 
-### Ausführung
+### Execution Order
 ```bash
 # Notebooks in dieser Reihenfolge ausführen:
 # 1. notebooks/01_exploration.ipynb
@@ -97,21 +133,21 @@ uv sync
 ```
 
 
-## 🎓 Über dieses Projekt
+## 🎓 About this Project
 
-**Kontext:** 
-<!-- Im Rahmen welches Kurses/welcher Veranstaltung? -->
+**Context:** 
+This project was developed as part of a personal data analytics portfolio to showcase exploratory data analysis, regression modeling, and documentation skills.
 
-**Zeitraum:** 
-<!-- Wann hast du das Projekt durchgeführt? -->
+**Timeline:** 
+August 2025 (3 weeks)
 
-**Autor:** 
-<!-- Dein Name -->
+**Author:** 
+Charlotte Sánchez Marlótica
 
-## 📞 Kontakt
+## 📞 Contact
 
 **GitHub:** [@DeinUsername](https://github.com/DeinUsername)  
-**E-Mail:** deine.email@beispiel.de  
+**Email:** deine.email@beispiel.de  
 **LinkedIn:** [Dein Profil](https://linkedin.com/in/dein-profil)
 
 ## 🙏 Danksagungen
