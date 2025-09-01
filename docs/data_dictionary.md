@@ -10,7 +10,7 @@ This data dictionary documents the variables of both datasets:
 
 | Variable                  | Description                                                                                          | Notes                                                                |
 |----------------------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| `Country name`             | Name of the country                                                                                 |  Report                                                         |
+| `Country name`             | Name of the country                                                                                 |                                                         |
 | `Regional indicator`       | Region the country belongs to                                                                       | Only explicitly included in the 2024 dataset                                   |
 | `Ladder score`             | Happiness score (0–10), based on the Cantril Ladder question                                        |                                                                |
 | `Upper whisker`            | Upper bound of the confidence interval for the ladder score                                         | Only explicitly included in the 2024 dataset                                          |
