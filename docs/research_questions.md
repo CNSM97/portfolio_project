@@ -11,5 +11,4 @@
 - H1: GDP, social support, and health are the strongest predictors of happiness scores.
 - H2: There are systematic differences in average happiness scores between regions, reflecting underlying economic, social, and health-related conditions.
 - H3: The relative importance of GDP compared to social support has shifted over time.
-- H4: Generosity has little to no explanatory power for happiness scores.
-- H5: The years 2020–2021 show a statistically significant drop in Life Ladder relative to trend, controlling for predictors.
+- H5: The years 2020–2021 show a statistically significant drop in Life Ladder relative to trend.
