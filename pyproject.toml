@@ -10,6 +10,7 @@ dependencies = [
     "matplotlib>=3.10.3",
     "nbstripout>=0.8.1",
     "pandas>=2.3.0",
+    "plotly>=6.3.0",
     "scikit-learn>=1.7.0",
     "seaborn>=0.13.2",
     "statsmodels>=0.14.5",
